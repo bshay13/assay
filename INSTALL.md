@@ -2,6 +2,17 @@
 
 Pick one of three install paths.
 
+## ChatGPT / Codex workspace
+
+ChatGPT and Codex discover the migrated workflow from `.agents/skills/` when this
+repository is opened as the workspace. Clone the repository, open that folder in
+ChatGPT/Codex, and confirm that `assay:source-command-assay` appears in the
+available skills. Ask it to run `assay` for a task; the workflow uses the same
+14-step pipeline and `$HOME/.Codex/` state paths as the Codex environment.
+
+This surface does not provide a Claude-style `/assay` slash command. Use the
+discovered `assay:source-command-assay` skill in ChatGPT/Codex instead.
+
 ## Path 1 — Claude Code plugin (recommended)
 
 If Claude Code's plugin loader is enabled, drop the repo into your local plugins directory:

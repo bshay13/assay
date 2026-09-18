@@ -141,6 +141,14 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for what each test enforces.
 
 ## Install
 
+### ChatGPT / Codex workspace
+
+Open a clone of this repository as the ChatGPT or Codex workspace. The migrated
+workflow is packaged under `.agents/skills/` and should appear as
+`assay:source-command-assay` in the available skills. Ask ChatGPT/Codex to run
+`assay` for a task to start the 14-step pipeline. This is the ChatGPT/Codex
+interface; the Claude Code `/assay` slash command is documented below.
+
 ### Option A — local plugin (immediate)
 
 ```bash

@@ -1,7 +1,7 @@
 [project]
 name = "assay"
 version = "0.1.1"
-description = "A 14-step ship pipeline orchestrator for Claude Code — fuzzy goal → crisp spec → risk-classified plan → judge-reviewed diff → engineer-in-the-loop commit → captured lessons, packaged as an installable plugin."
+description = "A 14-step ship pipeline orchestrator for Claude Code and ChatGPT/Codex — fuzzy goal → crisp spec → risk-classified plan → judge-reviewed diff → engineer-in-the-loop commit → captured lessons."
 readme = "README.md"
 requires-python = ">=3.13"
 license = { text = "MIT" }
