@@ -5,6 +5,18 @@ All notable changes to this project are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- **`desktop/plan-builder`.** A chat-native port of `spec-builder` for Claude
+  Desktop: the framing step, the one-question-at-a-time grill with recommended
+  answers, the playback, and the one-page plan template, with no file or repo
+  access. The plan is delivered in the conversation, ready to paste into
+  `/spec` or `/assay`. Lives outside `.claude/skills/` so it does not load
+  alongside `spec-builder` in Claude Code. Install by zipping the folder and
+  uploading it under Settings → Capabilities → Skills.
+
 ## 0.2.0 — Discovery
 
 Assay could execute an idea well and could not find one. Every stage was
