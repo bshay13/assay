@@ -1,0 +1,8 @@
+# Repo checks, run by the global git hooks in ~/.config/git/hooks (do not run `lefthook install`).
+# Lint and format already run on every commit through the global hooks (ruff is configured here).
+output: [failure]
+
+pre-push:
+  jobs:
+    - name: tests
+      run: uv run --quiet pytest -q
