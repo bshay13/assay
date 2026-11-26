@@ -1,0 +1,27 @@
+version: 2
+updates:
+  # Pinned GitHub Actions in .github/workflows.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7 # skip releases younger than a week (supply-chain safety)
+    groups:
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: ci
+
+  # Python dev tools in uv.lock (pytest, ruff).
+  - package-ecosystem: uv
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7 # skip releases younger than a week (supply-chain safety)
+    groups:
+      dev-tools:
+        patterns: ["*"]
+    commit-message:
+      prefix: build
